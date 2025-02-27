@@ -19,7 +19,7 @@ public class Main {
         //extract the place_id from the response
         JsonPath jsonPath=new JsonPath(response);
         String place_id=jsonPath.getString("place_id");
-        System.out.println("Place id : "+place_id);
+        System.out.println("Place id : "+place_id) ;
 
 
     }
