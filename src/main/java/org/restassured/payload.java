@@ -1,7 +1,8 @@
 package org.restassured;
 
 public class payload {
-    public static String getBody(){
+
+    public static String getBody1(){
         return "{\n" +
                 "  \"location\": {\n" +
                 "    \"lat\": -38.383494,\n" +
@@ -18,4 +19,14 @@ public class payload {
                 "  \"website\": \"http://google.com\",\n" +
                 "  \"language\": \"French-IN\"\n" +
                 "}"; }
+    public static String getBody2(String string,String newAddress){
+
+        String test= "{\r\n" +
+                "\"place_id\":\""+string+"\",\r\n" +
+                "\"address\":\""+newAddress+"\",\r\n" +
+                "\"key\":\"qaclick123\"\r\n" +
+                "}";
+        System.out.println("Test response body :" +test);
+        return test;
+    }
 }
